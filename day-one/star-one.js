@@ -9,4 +9,4 @@ for (const line of linesArray) {
     const num = digits[0] + digits[digits.length - 1];
     sum += parseInt(num);
 }
-console.log(sum);
+console.log(sum, 'yay');

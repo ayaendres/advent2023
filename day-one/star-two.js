@@ -9,7 +9,6 @@ const findAndAddDigits = () => {
     for (const line of linesArray) {
 
         const digits = line.replace(/\D/g, "");
-        console.log(line, digits);
         const num = digits[0] + digits[digits.length - 1];
         sum += parseInt(num);
     }

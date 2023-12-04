@@ -12,7 +12,7 @@ const method = () => {
         while (line.indexOf('*', baseIndex) > 0) {
             const index = line.indexOf('*', baseIndex);
             baseIndex = index + 1;
-            //find values around number
+            //find values around star
             const localLines = [linesArray[row - 1]?.substring(index - 3, index + 4) || "", line.substring(index - 3, index + 4), linesArray[row + 1]?.substring(index - 3, index + 4) || ""];
             const adjs = [];
             localLines.forEach((localLine) => {
